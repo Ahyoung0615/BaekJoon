@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class NumberSort {
     public static void main(String[] args) throws IOException {
+        // 백준 2751
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         // 첫 번째 줄에서 배열의 크기 입력
