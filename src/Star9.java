@@ -1,38 +1,28 @@
 import java.util.Scanner;
 
-public class Star8 {
+public class Star9 {
     public static void main(String[] args) {
-        // 백준 2445
+        // 백준 2446
         Scanner scanner = new Scanner(System.in);
 
         int number = scanner.nextInt();
 
-        for (int i = 1; i <= number; i++) {
+        for (int i = 0; i < number; i++) {
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
-            }
-            for (int j = 0; j < 2 * (number - i); j++) {
                 System.out.print(" ");
             }
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j  < 2 * (number - i) - 1; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-
-        for (int i = number - 1; i > 0; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-
-            for (int j = 1; j <= 2 * (number - i); j++) {
+        for (int i = 1; i < number; i++) {
+            for (int j = 0; j < number - i - 1; j++) {
                 System.out.print(" ");
             }
-
-            for (int j = 1; j <= i; j++) {
+            for (int j = 0; j < 2 * i + 1; j++) {
                 System.out.print("*");
             }
-
             System.out.println();
         }
     }
